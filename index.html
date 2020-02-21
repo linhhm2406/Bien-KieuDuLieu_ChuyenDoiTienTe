@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js.js"></script>
+</head>
+<body>
+<form>
+    <table style="width:700px; text-align: center" >
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td style="width:40px"><input type="text" id="amount"></td>
+            <td ><select name="currency" id="from">
+                <option value="Vietnam" selected>Vietnam</option>
+                <option value="USD">USD</option>
+                <option value="SNG">SNG</option>
+                <option value="CHN">CHN</option>
+            </select></td>
+            <td><select name="currency" id="to">
+                <option value="Vietnam">Vietnam</option>
+                <option value="USD" selected>USD</option>
+                <option value="SNG">SNG</option>
+                <option value="CHN">CHN</option>
+            </select></td>
+            <td><b><input type="button" onclick="convert()" value="Convert"></b></td>
+        </tr>
+        <tr>
+            <td style="text-align: left" colspan="3">Result: <span id="result" style="color: blue; width: 55px"></span>
+                <span style="color: blue" id="result-country"></span></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
